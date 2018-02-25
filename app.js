@@ -9,7 +9,18 @@ var cors = require('cors')
 // route imports
 var index = require('./routes/index');
 var events = require('./routes/events');
+
+
+
+
 // TODO: add your route file here:
+var events = require('./routes/events');
+
+
+
+
+
+
 
 
 // create the server
@@ -24,10 +35,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 
+
 // set routes
 app.use('/', index);
-app.use('/events', events);
+
+
 // TODO: add your route her:
+app.use('/events', events);
+
+
 
 
 
