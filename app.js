@@ -5,14 +5,20 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors')
+var db = require('./model/db');
+
+
 
 // route imports
 var index = require('./routes/index');
 var events = require('./routes/events');
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> add events route and fetching from the database
 // TODO: add your route file here:
 var events = require('./routes/events');
 
