@@ -13,12 +13,6 @@ var db = require('./model/db');
 var index = require('./routes/index');
 var events = require('./routes/events');
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> add events route and fetching from the database
 // TODO: add your route file here:
 var events = require('./routes/events');
 
