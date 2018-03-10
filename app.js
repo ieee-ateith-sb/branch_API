@@ -11,11 +11,10 @@ var db = require('./model/db');
 
 // route imports
 var index = require('./routes/index');
-var events = require('./routes/events');
 
 // TODO: add your route file here:
 var events = require('./routes/events');
-
+var messages = require('./routes/messages');
 
 
 
@@ -42,7 +41,7 @@ app.use('/', index);
 
 // TODO: add your route her:
 app.use('/events', events);
-
+app.use('/messages',messages);
 
 
 
