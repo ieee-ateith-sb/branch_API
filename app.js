@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors')
 var db = require('./model/db');
+var helmet = require('helmet')
+
 
 
 
@@ -24,6 +26,8 @@ var messages = require('./routes/messages');
 
 // create the server
 var app = express();
+//added helmet
+app.use(helmet());
 
 // initialize packages
 app.use(logger('dev'));
