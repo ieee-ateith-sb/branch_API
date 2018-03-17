@@ -1,4 +1,4 @@
-var  eventsData = require('./../data/myevents');
+//var  eventsData = require('./../data/myevents');
 
 var express = require('express');
 var router = express.Router();

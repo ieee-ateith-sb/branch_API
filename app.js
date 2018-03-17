@@ -6,16 +6,17 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors')
 var db = require('./model/db');
+var helmet = require('helmet')
+
 
 
 
 // route imports
 var index = require('./routes/index');
-var events = require('./routes/events');
 
 // TODO: add your route file here:
 var events = require('./routes/events');
-
+var messages = require('./routes/messages');
 
 
 
@@ -25,6 +26,8 @@ var events = require('./routes/events');
 
 // create the server
 var app = express();
+//added helmet
+app.use(helmet());
 
 // initialize packages
 app.use(logger('dev'));
@@ -42,7 +45,7 @@ app.use('/', index);
 
 // TODO: add your route her:
 app.use('/events', events);
-
+app.use('/messages',messages);
 
 
 
